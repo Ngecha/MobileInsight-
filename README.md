@@ -11,6 +11,10 @@ Welcome to **MobileInsight**, your premier destination for the latest smartphone
 
 ## Installation
 
+use https://mobileapp-ivory.vercel.app/ to get the hosted version
+
+or
+
 To run the MobileInsight website locally, follow these steps:
 
 1. **Clone the Repository**:
