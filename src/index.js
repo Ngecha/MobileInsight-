@@ -7,6 +7,7 @@ import NewPhone from "./Pages/NewPhone";
 import About from "./Pages/About";
 
 const router = createBrowserRouter([
+  // client-side routing
   { path: "/", element: <Home /> },
   { path: "/specs/:id", element: <Specifications /> },
   { path: "/newphone", element: <NewPhone /> },

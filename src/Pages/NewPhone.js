@@ -44,7 +44,7 @@ function NewPhone() {
           image: data.image,
           price: data.price,
         });
-        window.location.reload(); /// Auto-reloads the window to display the new transaction
+        window.location.reload(); /// Auto-reloads the window to refresh the form
       });
   };
 
@@ -53,7 +53,7 @@ function NewPhone() {
     <div style={{ backgroundColor: "#f8f9fa" }}>
       <a type="button" href="/" className="btn  btn-lg">MobileInsight</a>
       <a type="button" href="/About" className="btn">About</a>
-
+      {/* // form to add a new device */}
       <form id="phoneForm" onSubmit={handleSubmit}>
         <p>Fill this Form to add A Device</p>
         <div className="mb-3">

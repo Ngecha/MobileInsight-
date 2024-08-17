@@ -18,18 +18,20 @@ function Home() {
   }, []);
 
   return (
-    <div style={{backgroundColor:'#f8f9fa'}}>
+    // main page(landing page)
+    <div style={{ backgroundColor: "#f8f9fa" }}>
       <Navbar onSearch={onSearch} />
       <Header />
       <h3 className="p-3">SMART PHONES</h3>
       <PhoneCard search={search} pageOne={pageOne} />
       <p className="p-2">
         Would you like to add a device?
+        {/* link to the newphone page */}
         <Link to={"/newphone"}>
           <em>click here</em>
         </Link>
       </p>
-        <Footer/>
+      <Footer />
     </div>
   );
 }

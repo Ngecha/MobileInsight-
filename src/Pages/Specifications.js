@@ -29,13 +29,14 @@ function Specifications() {
           className="card-img-center"
           alt={profile.name}
         />
+        {/* device specifications */}
         <div className="card-body">
           <h5 className="card-title">Name: {profile.name}</h5>
-          <h5 className="card-text">Processor: {profile.processor}</h5>
-          <h5 className="card-text">Memory: {profile.memory}</h5>
-          <h5 className="card-text">Display: {profile.display}</h5>
-          <h5 className="card-text">Battery: {profile.battery}</h5>
-          <h5 className="card-text">Price: {profile.price}</h5>
+          <p className="card-text">Processor: {profile.processor}</p>
+          <p className="card-text">Memory: {profile.memory}</p>
+          <p className="card-text">Display: {profile.display}</p>
+          <p className="card-text">Battery: {profile.battery}</p>
+          <p className="card-text">Price: {profile.price}</p>
         </div>
       </div>
       <Footer/>

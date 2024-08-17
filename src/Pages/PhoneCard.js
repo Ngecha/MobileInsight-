@@ -7,11 +7,13 @@ function PhoneCard({ pageOne, search }) {
     <div>
       <div className="d-flex flex-wrap m-4" style={{backgroundColor:'#f8f9fa'}}>
         {pageOne
+        // for the search bar
           .filter((phone) => {
             return search === ""
               ? phone
               : phone.name.includes(search);
           })
+          // a card for each device
           .map((phone) => (
             <div
               className="card m-2"
@@ -26,6 +28,7 @@ function PhoneCard({ pageOne, search }) {
               />
               <div className="card-body">
                 <h5 className="card-title">
+                  {/* link to the form to add a new device */}
                   <Link to={`/specs/${phone.id}`}>{phone.name}</Link>
                 </h5>
               </div>
