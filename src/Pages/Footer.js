@@ -41,7 +41,6 @@ const Footer = () => {
           <div style={{ flex: '1', minWidth: '200px', marginBottom: '20px' }}>
             <h4>Stay Connected</h4>
             <p>
-              {/* Replace # with your actual social media links */}
               <a href="#" style={{ margin: '0 10px' }}>Facebook</a>
               <a href="#" style={{ margin: '0 10px' }}>X</a>
               <a href="#" style={{ margin: '0 10px' }}>Instagram</a>

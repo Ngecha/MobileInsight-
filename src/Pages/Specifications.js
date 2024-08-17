@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Footer from "./Footer";
 
 function Specifications() {
+  // state and use Params
   const [profile, setProfile] = useState({});
   const params = useParams();
   const profileId = params.id;
@@ -31,12 +32,12 @@ function Specifications() {
         />
         {/* device specifications */}
         <div className="card-body">
-          <h5 className="card-title">Name: {profile.name}</h5>
-          <p className="card-text">Processor: {profile.processor}</p>
-          <p className="card-text">Memory: {profile.memory}</p>
-          <p className="card-text">Display: {profile.display}</p>
-          <p className="card-text">Battery: {profile.battery}</p>
-          <p className="card-text">Price: {profile.price}</p>
+          <h5 className="card-title"><strong>Name</strong>: {profile.name}</h5>
+          <p className="card-text"><strong>Processor</strong>: {profile.processor}</p>
+          <p className="card-text"><strong>Memory</strong>: {profile.memory}</p>
+          <p className="card-text"><strong>Display</strong>: {profile.display}</p>
+          <p className="card-text"><strong>Battery</strong>: {profile.battery}</p>
+          <p className="card-text"><strong>Price</strong>: {profile.price}</p>
         </div>
       </div>
       <Footer/>
